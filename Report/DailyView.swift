@@ -32,7 +32,7 @@ class DailyView: UIViewController {
         var second_Source = String()
         var second_Description = String()
         let configuration_2 = URLSessionConfiguration.default
-        let url_API2 = URL(string:"https://newsapi.org/v2/top-headlines?country=us&apiKey=6deaf6bb62b94a05b37812d5636b6ecd")!
+        let url_API2 = URL(string:"https://newsapi.org/v2/top-headlines?country=us&apiKey=[REDACTED]")!
         let session_2 = URLSession(configuration: configuration_2, delegate: nil, delegateQueue: OperationQueue.main)
 
         let task_2 = session_2.dataTask(with: url_API2, completionHandler: { data_2, response_2, error_2 in
