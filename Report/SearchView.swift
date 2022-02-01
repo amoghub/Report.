@@ -40,7 +40,7 @@ class SearchView: UIViewController {
         
         // if text is nothing, display nothing
         if temp == "" {
-            query_temp = "https://gnews.io/api/v4/top-headlines?lang=en&token=d73de0430a2d72ef2e476c359446edb9"
+            query_temp = "https://gnews.io/api/v4/top-headlines?lang=en&token=[REDACTED]"
             searchField.resignFirstResponder()
         }
         
@@ -49,12 +49,12 @@ class SearchView: UIViewController {
             // formatting for API with spaces
             if temp?.range(of: " ") != nil {
                 let new_temp = temp?.replacingOccurrences(of: " ", with: "%20")
-                query_temp = "https://gnews.io/api/v4/search?q=" + new_temp! + "&lang=en&token=d73de0430a2d72ef2e476c359446edb9"
+                query_temp = "https://gnews.io/api/v4/search?q=" + new_temp! + "&lang=en&token=[REDACTED]"
             }
             
             // formatting for API with regular keyword
             else{
-                query_temp = "https://gnews.io/api/v4/search?q=" + temp! + "&lang=en&token=d73de0430a2d72ef2e476c359446edb9"
+                query_temp = "https://gnews.io/api/v4/search?q=" + temp! + "&lang=en&token=[REDACTED]"
             }
         }
         
