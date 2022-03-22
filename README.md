@@ -10,11 +10,10 @@ This tab is what the app initally opens to, and showcases the top news articles 
 
 ### <ins> Search </ins>
 
+If the user wants to find out news articles about their favorite topic then the Search tab is the perfect place. Search uses the GNewsAPI to get keyworded responses that filter to the user's word inputted in the search bar. The result is the user being able to see news articles that they searched for, all with a seamless click.
 
-
-
-RESTful API to fetch JSON formatted data to be parsed and read into variables which will be shown into t
-Users can also close their app and be brought back to the same tab which they were on from their last use.
+NEW:
+Users can close their app and be brought back to the same tab which they were on from their last use.
 
 
 
